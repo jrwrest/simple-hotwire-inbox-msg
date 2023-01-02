@@ -1,5 +1,6 @@
 class Message < ApplicationRecord
   belongs_to :inbox
+  acts_as_tenant :account
   
 
   # lets you use dom_id in a model
